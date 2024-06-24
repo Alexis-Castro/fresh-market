@@ -1,0 +1,98 @@
+---
+import impulsoCapitalWhite from "../images/impulso-capital-white.png";
+import ministerio from "../images/ministerio.png";
+
+// Asociados
+import camaraComercio from "../images/cca-blanco.png";
+import camaraComercioArequipa from "../images/ccl-blanco.png";
+import aspai from "../images/aspai-blanco.png";
+import inversionHogar from "../images/inversion-hogar.png";
+import inversionNegocio from "../images/inversion-negocio.png";
+import sociosClub from "../images/socios-club.png";
+---
+
+<section class="py-12 lg:py-24 relative">
+   <div class="px-6 lg:px-14">
+      <div class="lg:max-w-5xl xl:max-w-7xl relative mx-auto">
+         <div class="max-w-3xl md:mx-auto md:text-center mb-10">
+            <figure class="relative mb-5">
+               <img
+                  class="w-1/2 rounded-md mx-auto"
+                  src={impulsoCapitalWhite.src}
+                  alt=""
+               />
+            </figure>
+            <p class="text-lg text-[#c3c3c3] text-center">
+               Hace más de 12 años gestionamos y capitalizamos un futuro sólido
+               en nuestros inversionistas, clientes y propietarios; gracias a
+               los Bienes Raíces.
+            </p>
+         </div>
+         <div class="grid gap-y-6 py-6">
+            <div
+               class="block basis-0 flex-shrink flex-grow p-2 md:flex-none md:w-4/5 mx-auto text-center lg:w-2/5">
+               <h3 class="uppercase md:text-xl mb-3 font-bold text-[#ededed]">
+                  Acreditados por:
+               </h3>
+               <figure class="relative">
+                  <img src={ministerio.src} class="w-72 mx-auto" alt="" />
+               </figure>
+            </div>
+            <div class="block basis-0 flex-shrink flex-grow p-2 text-center">
+               <h3 class="uppercase text-xl mb-3 font-bold text-[#ededed]">
+                  Asociados con:
+               </h3>
+               <div class="flex items-center justify-center flex-wrap gap-7">
+                  <div class="p-2">
+                     <figure class="relative">
+                        <img
+                           src={camaraComercio.src}
+                           class="w-72 mx-auto"
+                           alt=""
+                        />
+                     </figure>
+                  </div>
+                  <div class="p-2">
+                     <figure class="relative">
+                        <img
+                           src={camaraComercioArequipa.src}
+                           class="w-72 mx-auto"
+                           alt=""
+                        />
+                     </figure>
+                  </div>
+                  <div class="p-2">
+                     <figure class="relative">
+                        <img src={aspai.src} class="w-72 mx-auto" alt="" />
+                     </figure>
+                  </div>
+
+                  <div class="p-2">
+                     <figure class="relative">
+                        <img
+                           src={inversionHogar.src}
+                           class="w-[10rem] mx-auto"
+                           alt=""
+                        />
+                     </figure>
+                  </div>
+                  <div class="p-2">
+                     <figure class="relative">
+                        <img
+                           src={inversionNegocio.src}
+                           class="w-72 mx-auto"
+                           alt=""
+                        />
+                     </figure>
+                  </div>
+                  <div class="p-2">
+                     <figure class="relative">
+                        <img src={sociosClub.src} class="w-72 mx-auto" alt="" />
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

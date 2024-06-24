@@ -1,0 +1,66 @@
+---
+import onebreak from "../images/1break.png";
+import interbank from "../images/interbank.png";
+import aranwa from "../images/aranwa.png";
+import imperium from "../images/imperium-fitness.png";
+import ingenium from "../images/ingenium.png";
+import inkari from "../images/inkari-lodge.png";
+import lucia from "../images/lucia-novias.png";
+import multident from "../images/multident.png";
+import scotiabank from "../images/scotiabank.png";
+---
+
+<section class="py-12 lg:py-24 relative">
+   <div class="px-6">
+      <div class="lg:max-w-5xl xl:max-w-7xl relative mx-auto">
+         <div class="block basis-0 flex-shrink flex-grow p-2 text-center">
+            <h2
+               class="text-balance mx-auto text-[#ededed] text-3xl md:text-4xl lg:text-5xl font-bold mb-8 after:w-10 after:h-1 after:mx-auto after:mt-4 after:bg-freshmarket-primary after:block after:rounded">
+               Nuestros Aliados Estratégicos
+            </h2>
+         </div>
+      </div>
+   </div>
+
+   <!-- <div class="relative flex overflow-x-hidden"> -->
+   <article
+      class="w-full inline-flex flex-nowrap overflow-hidden"
+      x-data="{}"
+      x-init={`$nextTick(() => {
+          let ul = $refs.logos;
+          ul.insertAdjacentHTML('afterend', ul.outerHTML);
+          ul.nextSibling.setAttribute('aria-hidden', 'true');
+      })`}>
+      <ul
+         x-ref="logos"
+         class="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-marquee">
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={onebreak.src} alt="" />
+         </li>
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={interbank.src} alt="" />
+         </li>
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={aranwa.src} alt="" />
+         </li>
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={imperium.src} alt="" />
+         </li>
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={ingenium.src} alt="" />
+         </li>
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={inkari.src} alt="" />
+         </li>
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={lucia.src} alt="" />
+         </li>
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={multident.src} alt="" />
+         </li>
+         <li class="p-5 bg-slate-50 rounded-xl">
+            <img class="p-2 max-w-60 lg:max-w-80" src={scotiabank.src} alt="" />
+         </li>
+      </ul>
+   </article>
+</section>

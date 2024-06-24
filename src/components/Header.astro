@@ -1,0 +1,132 @@
+---
+// const path = Astro.url.pathname;
+import freshmarket from "../images/fresh-market.png";
+import impulsoCapital from "../images/impulso-capital-h.png";
+---
+
+<header
+   class="home top-0 w-full z-30 transition-[padding,_background] duration-300 ease-out py-3 lg:py-5 bg-[rgba(25,37,67,0.65)] shadow"
+   id="header">
+   <nav class="group navbar">
+      <div
+         class="lg:max-w-5xl xl:max-w-7xl mx-auto w-full max-lg:group-[.navbar]:block relative grow group-[.navbar]:flex group-[.navbar]:items-stretch justify-between">
+         <div class="flex items-stretch shrink-0 min-h-[4rem]">
+            <a
+               class="flex items-center relative grow-0 shrink-0 py-2 px-3"
+               href="#">
+               <img
+                  class="w-full max-w-36 md:max-w-52"
+                  width="150"
+                  height="47"
+                  src={impulsoCapital.src}
+                  alt="Impulso Capital"
+               />
+               <!-- <picture>
+                  <source
+                     srcset={ayllukaypiAvif}
+                     type="image/avif"
+                  />
+                  <source
+                     srcset={ayllukaypiWebp}
+                     type="image/webp"
+                  />
+                  <img
+                     class="max-h-12"
+                     width="105"
+                     height="47"
+                     src={ayllukaypi}
+                     alt="Ayllu Kaypi - Aquí hogar, Aquí familia"
+                  />
+               </picture> -->
+            </a>
+         </div>
+
+         <div class="flex items-stretch shrink-0 min-h-[4rem] gap-x-2">
+            <a
+               class="flex items-center relative grow-0 shrink-0 py-2 px-3"
+               href="#">
+               <img
+                  class="w-full max-w-24 md:max-w-28"
+                  width="100"
+                  height="47"
+                  src={freshmarket.src}
+                  alt="Fresh Market"
+               />
+            </a>
+            <a
+               class="flex items-center relative grow-0 shrink-0 px-3"
+               href="https://wa.link/5rvcsb"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Contactar a un asesor">
+               <div class="animate-sombras rounded-full">
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     class="icon icon-tabler icon-tabler-brand-whatsapp"
+                     width="35"
+                     height="35"
+                     viewBox="0 0 24 24"
+                     stroke-width="1.5"
+                     stroke="#fff"
+                     fill="none"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                     <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"
+                     ></path>
+                     <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+                     ></path>
+                  </svg>
+               </div>
+               <!-- <span class="relative flex h-3 w-3">
+                  <span
+                     class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
+                  ></span>
+                  <span
+                     class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"
+                  ></span>
+               </span> -->
+            </a>
+         </div>
+      </div>
+   </nav>
+</header>
+
+<style>
+   #header {
+      backdrop-filter: blur(10px);
+      animation: add-shadow linear both;
+      position: fixed;
+      top: 0;
+      animation-timeline: scroll();
+      animation-range: 0 150px;
+   }
+
+   #header.home {
+      /* background-color: #192543; */
+      padding: 0.75rem 0;
+   }
+</style>
+
+<script>
+   addEventListener("scroll", () => {
+      const header = document.querySelector("#header") as HTMLElement;
+      // const navbarMobile = document.querySelector("#navbar-mobile-content");
+
+      header.classList.toggle("home", window.scrollY > 0);
+      // navbarMobile.classList.toggle("!flex", window.scrollY > 0);
+   });
+
+   // const $navbarBurger = document.querySelector(".navbar-burger");
+
+   // $navbarBurger.addEventListener("click", () => {
+   //    // Get the target from the "data-target" attribute
+   //    const target = $navbarBurger.dataset.target;
+   //    const $target = document.getElementById(target);
+
+   //    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+   //    $navbarBurger.classList.toggle("max-lg:block");
+   //    $target.classList.toggle("max-lg:block");
+   // });
+</script>
