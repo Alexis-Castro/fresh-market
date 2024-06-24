@@ -7,6 +7,6 @@ import alpinejs from "@astrojs/alpinejs";
 export default defineConfig({
   integrations: [tailwind(), alpinejs()],
 
-  // site: 'https://astronaut.github.io',
-  // base: 'mi-repo',
+  site: 'https://alexis-castro.github.io',
+  base: '/fresh-market'
 });
