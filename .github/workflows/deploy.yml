@@ -24,16 +24,10 @@ jobs:
            uses: withastro/action@v2
          - name: Setup pnpm
            uses:
-              pnpm/action-setup@v4 # docs https://pnpm.io/continuous-integration#github-actions
+              pnpm/action-setup@v2 # docs https://pnpm.io/continuous-integration#github-actions
               with:
-                 version: 9  # Optional: specify a pnpm version
-         - name: Use Node.js ${{ matrix.node-version }}
-           uses: actions/setup-node@v4
-               with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: 'pnpm'
-         - name: Install dependencies
-         run: pnpm install
+                 version: 8  # Optional: specify a pnpm version
+         
            # with:
            # path: . # La ubicación raíz de tu proyecto de Astro dentro del repositorio. (opcional)
            # node-version: 20 # La versión específica de Node que debería usarse para construir tu sitio. Por defecto es 20. (opcional)
