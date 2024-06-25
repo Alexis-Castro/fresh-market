@@ -1,5 +1,6 @@
 ---
 import planoStandsH from "../images/plano-stands-horizontal.png";
+import leyenda from "../images/leyenda.png";
 ---
 
 <section class="py-12 px-6 lg:py-24 lg:px-14 relative">
@@ -26,8 +27,8 @@ import planoStandsH from "../images/plano-stands-horizontal.png";
       </div>
       <div class="lg:flex items-center justify-between gap-4 max-w-6xl mx-auto">
          <div
-            class="block basis-0 flex-shrink flex-grow p-2 mx-auto lg:mx-0 text-center lg:text-left mb-5">
-            <p class="text-lg text-[#c3c3c3]">
+            class="block basis-0 flex-shrink flex-grow py-5 mx-auto lg:mx-0 text-center lg:text-left mb-5">
+            <p class="text-lg text-[#c3c3c3] text-center">
                <span class="text-freshmarket-primary">Fresh Market</span> posee una
                inmejorable distribución, cuenta con una amplia variedad de zonas
                y rubros para tu negocio: Productos de primera necesidad, área financiera,
@@ -92,11 +93,18 @@ import planoStandsH from "../images/plano-stands-horizontal.png";
                </a>
             </div>
          </div>
-         <!-- <div class="block basis-0 flex-shrink flex-grow p-2">
+         <div class="block basis-0 flex-shrink flex-grow p-2 text-center">
+            <p class="uppercase md:text-xl mb-3 font-bold text-[#ededed]">
+               Áreas de distribucion
+            </p>
             <figure class="relative">
-               <img class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-lg xl:h-full mx-auto" src="" alt="">   
+               <img
+                  class="w-full rounded-md shadow-xl ring-2 ring-ic-secondary ring-opacity-90 max-w-80 xl:h-full mx-auto"
+                  src={leyenda.src}
+                  alt="Leyenda plano"
+               />
             </figure>
-         </div> -->
+         </div>
       </div>
    </div>
 </section>
