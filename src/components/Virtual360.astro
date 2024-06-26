@@ -1,9 +1,10 @@
 ---
-import planoStandsH from "../images/plano-stands-horizontal.png";
-import leyenda from "../images/leyenda.png";
+import planoStandsH from "../images/plano-stands-horizontal.jpg";
+import leyenda from "../images/leyenda.jpg";
+// import Modal from "./Modal.astro";
 ---
 
-<section class="py-12 px-6 lg:py-24 lg:px-14 relative">
+<section class="py-12 px-6 lg:py-24 lg:px-14 relative" id="ubicacion">
    <div class="lg:max-w-5xl xl:max-w-7xl mx-auto w-full relative">
       <!-- <div class="block basis-0 flex-shrink flex-grow p-2 text-center">
          <h2
@@ -19,30 +20,27 @@ import leyenda from "../images/leyenda.png";
          </h2>
          <figure class="relative py-3">
             <img
-               class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-6xl xl:h-full mx-auto"
+               class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-4xl xl:h-full mx-auto"
                src={planoStandsH.src}
                alt="Impulso Capital"
             />
          </figure>
       </div>
-      <div class="lg:flex items-center justify-between gap-4 max-w-6xl mx-auto">
+      <div class="lg:flex items-center justify-between gap-4 max-w-4xl mx-auto">
          <div
-            class="block basis-0 flex-shrink flex-grow py-5 mx-auto lg:mx-0 text-center lg:text-left mb-5">
+            class="block basis-0 flex-shrink flex-grow py-5 mx-auto lg:mx-0 text-center lg:text-left mb-5 lg:mb-0">
             <p class="text-lg text-[#c3c3c3] text-center">
                <span class="text-freshmarket-primary">Fresh Market</span> posee una
                inmejorable distribución, cuenta con una amplia variedad de zonas
                y rubros para tu negocio: Productos de primera necesidad, área financiera,
                zonas tecnológicas, de moda, belleza, boutique y bisutería.
             </p>
-            <div
-               class="mt-5 flex justify-center lg:justify-normal flex-wrap gap-3">
+            <div class="mt-5 flex justify-center flex-wrap gap-3">
                <a
                   href="https://s3.us-east-2.amazonaws.com/recorridosvirtuales.ic/RECORRIDO360+FRESH+MARKET/index.htm"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="py-[.7rem] px-6 bg-gradient-to-br from-freshmarket-primary to-[#3da837c0] hover:scale-105 focus:ring-green-950 focus:ring-offset-indigo-200 transition ease-in text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full inline-flex items-center justify-center text-gray-50 gap-x-2 leading-7 hover:opacity-90"
-                  data-astro-source-file="C:/laragon/www/landing-fresh-market/src/components/Cta.astro"
-                  data-astro-source-loc="20:331">
+                  class="py-[.7rem] px-6 bg-gradient-to-br from-freshmarket-primary to-[#3da837c0] hover:scale-105 focus:ring-green-950 focus:ring-offset-indigo-200 transition ease-in text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full inline-flex items-center justify-center text-gray-50 gap-x-2 hover:opacity-90">
                   Visita el recorrido virtual
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
@@ -65,11 +63,9 @@ import leyenda from "../images/leyenda.png";
                      ></path></svg
                   >
                </a>
-               <a
-                  href="#"
-                  class="py-[.7rem] px-6 bg-gradient-to-br from-freshmarket-primary to-[#3da837c0] hover:scale-105 focus:ring-green-950 focus:ring-offset-indigo-200 transition ease-in text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full inline-flex items-center justify-center text-gray-50 gap-x-2 leading-7 hover:opacity-90"
-                  data-astro-source-file="C:/laragon/www/landing-fresh-market/src/components/Cta.astro"
-                  data-astro-source-loc="20:331">
+               <button
+                  @click="modalIsOpen = true"
+                  class="py-[.7rem] px-6 bg-gradient-to-br from-freshmarket-primary to-[#3da837c0] hover:scale-105 focus:ring-green-950 focus:ring-offset-indigo-200 transition ease-in text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full inline-flex items-center justify-center text-gray-50 gap-x-2 hover:opacity-90">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -90,7 +86,7 @@ import leyenda from "../images/leyenda.png";
                      ></path><path d="M19 21v1m0 -8v1"></path></svg
                   >
                   ¡Separa tu unidad ahora!
-               </a>
+               </button>
             </div>
          </div>
          <div class="block basis-0 flex-shrink flex-grow p-2 text-center">

@@ -7,6 +7,6 @@ import alpinejs from "@astrojs/alpinejs";
 export default defineConfig({
   integrations: [tailwind(), alpinejs()],
 
-  site: 'https://alexis-castro.github.io',
-  base: '/fresh-market'
+  site: 'https://impulsocapital.com.pe',
+  base: '/freshmarket'
 });

@@ -2,29 +2,29 @@
 
 ---
 
-<form
-   class="px-4 py-8 sm:px-10 z-20"
-   id="formulario"
-   enctype="multipart/form-data">
+<form class="py-6 px-8 sm:px-10 z-20" id="formulario">
    <div class="">
-      <div class="flex justify-center text-sm leading-5">
+      <div class="flex flex-col justify-center text-sm leading-5">
          <h2
-            class="px-2 text-freshmarket-primary text-2xl font-bold mb-5 text-center">
-            ¿Quieres olvidarte de pagar alquileres o rentas mensuales? Déjanos
-            tus datos y te explicaremos cómo
+            class="px-2 text-freshmarket-primary text-xl font-semibold text-center mb-1">
+            ¿Quieres olvidarte de pagar alquileres o rentas mensuales?
          </h2>
+         <p
+            class="px-2 text-freshmarket-primary font-semibold mb-5 text-center">
+            Déjanos tus datos y te explicaremos cómo
+         </p>
       </div>
    </div>
    <div class="mt-6">
-      <div class="w-full space-y-8">
+      <div class="w-full space-y-6">
          <div
-            class="md:flex items-center justify-between gap-x-3 space-y-8 md:space-y-0">
+            class="md:flex items-center justify-between gap-x-3 space-y-6 md:space-y-0">
             <div class="w-full group">
                <input
                   type="text"
                   name="nombres"
                   placeholder="Nombres"
-                  class="rounded-lg flex-1 appearance-none w-full py-2.5 px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
+                  class="rounded-lg flex-1 appearance-none w-full py-2.5 text-sm px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
                   required
                />
             </div>
@@ -33,7 +33,7 @@
                   type="text"
                   name="apellidos"
                   placeholder="Apellidos"
-                  class="rounded-lg flex-1 appearance-none w-full py-2.5 px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
+                  class="rounded-lg flex-1 appearance-none w-full py-2.5 text-sm px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
                   required
                />
             </div>
@@ -42,7 +42,7 @@
             <div class="w-full group">
                <input
                   type="email"
-                  class="rounded-lg flex-1 appearance-none w-full py-2.5 px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
+                  class="rounded-lg flex-1 appearance-none w-full py-2.5 text-sm px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
                   name="email"
                   placeholder="Correo"
                   required
@@ -53,7 +53,7 @@
          <div class="w-full">
             <input
                type="tel"
-               class="rounded-lg flex-1 appearance-none w-full py-2.5 px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
+               class="rounded-lg flex-1 appearance-none w-full py-2.5 text-sm px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
                name="celular"
                placeholder="Celular"
                required
@@ -66,7 +66,7 @@
                name="ciudad"
                id="ciudad"
                placeholder="Ciudad"
-               class="rounded-lg flex-1 appearance-none w-full py-2.5 px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
+               class="rounded-lg flex-1 appearance-none w-full py-2.5 text-sm px-3 border border-green-600 transition text-gray-700 placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-freshmarket-primary focus:border-transparent"
             />
          </div>
 
@@ -82,18 +82,18 @@
                class="ml-2 font-medium mr-1 text-sm text-gray-700">
                He leído y acepto los
                <a
-                  href="/politicas_privacidad"
+                  href="https://impulsocapital.com.pe/terminos-y-condiciones/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:underline cursor-pointer text-freshmarket-primary font-bold js-modal-trigger">
+                  class="hover:underline cursor-pointer text-freshmarket-primary font-semibold text-sm">
                   Términos y Condiciones
                </a>
                y las
                <a
-                  href="/terminos_condiciones"
+                  href="https://impulsocapital.com.pe/politicas-y-privacidad/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="hover:underline cursor-pointer text-freshmarket-primary font-bold js-modal-trigger">
+                  class="hover:underline cursor-pointer text-freshmarket-primary font-semibold text-sm">
                   Políticas de Privacidad
                </a>
             </label>
@@ -118,7 +118,7 @@
                         d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
                         fill="currentColor"></path>
                   </svg>
-                  Contáctenme
+                  Enviar
                </button>
             </span>
          </div>
@@ -127,23 +127,16 @@
 </form>
 
 <!-- <script>
-   import axios from "axios";
    import { toast } from "https://cdn.skypack.dev/wc-toast";
 
-   const form = document.querySelector("#formulario");
-   const archivo = document.querySelector("#archivo");
-   const buttonSubmit = document.querySelector("#button-submit");
-   const svg = document.querySelector("#button-submit svg");
-
-   
+   const form = document.querySelector("#formulario") as HTMLFormElement;
+   const buttonSubmit = document.querySelector("#button-submit") as HTMLElement;
+   const svg = document.querySelector("#button-submit svg") as HTMLElement;
 
    form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       const datos = new FormData(form);
-      const archivos = archivo.files;
-      
-      datos.append("archivo", archivos[0]);
 
       buttonSubmit.setAttribute("disabled", "true");
       buttonSubmit.classList.add("opacity-70", "cursor-not-allowed");
@@ -154,26 +147,29 @@
       // }
 
       try {
-         const response = await axios.post(
-            "http://localhost/web_ayllukaypi_tailwind/contacto/agente/",
-            datos
+         const response = await fetch(
+            "http://localhost/landing/market/contacto/",
+            {
+               method: "POST",
+               body: datos,
+               // mode: "no-cors",
+            }
          );
-         // console.log(response);
+         const result = await response.json();
+         console.log(result);
 
-         if (response.data == "El archivo se cargó con éxito") {
+         // if (response.data == "El archivo se cargó con éxito") {
+         //    buttonSubmit.removeAttribute("disabled");
+         //    buttonSubmit.classList.remove("opacity-70", "cursor-not-allowed");
+         //    svg.classList.add("hidden");
 
-            buttonSubmit.removeAttribute('disabled')
-            buttonSubmit.classList.remove("opacity-70", "cursor-not-allowed");
-            svg.classList.add('hidden')
-
-            toast("¡Te has postulado correctamente!", {
-               icon: {
-                  type: "success",
-               },
-            });
-            form.reset();
-         }
-
+         //    toast("¡Te has postulado correctamente!", {
+         //       icon: {
+         //          type: "success",
+         //       },
+         //    });
+         //    form.reset();
+         // }
       } catch (error) {
          console.log(error);
          toast(
@@ -191,10 +187,9 @@
    //    try {
    //       new URL(miurl);
    //       return true;
-      
+
    //    } catch (err) {
    //       return false;
    //    }
    // }
-
 </script> -->

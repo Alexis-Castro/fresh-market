@@ -20,47 +20,119 @@ import scotiabank from "../images/scotiabank.png";
             </h2>
          </div>
       </div>
-   </div>
 
-   <!-- <div class="relative flex overflow-x-hidden"> -->
-   <article
-      class="w-full inline-flex flex-nowrap overflow-hidden"
-      x-data="{}"
-      x-init={`$nextTick(() => {
+      <!-- <div class="relative flex overflow-x-hidden"> -->
+      <article
+         class="w-full inline-flex flex-nowrap overflow-hidden"
+         x-data="{}"
+         x-init={`$nextTick(() => {
           let ul = $refs.logos;
           ul.insertAdjacentHTML('afterend', ul.outerHTML);
           ul.nextSibling.setAttribute('aria-hidden', 'true');
       })`}>
-      <ul
-         x-ref="logos"
-         class="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-marquee">
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={onebreak.src} alt="" />
-         </li>
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={interbank.src} alt="" />
-         </li>
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={aranwa.src} alt="" />
-         </li>
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={imperium.src} alt="" />
-         </li>
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={ingenium.src} alt="" />
-         </li>
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={inkari.src} alt="" />
-         </li>
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={lucia.src} alt="" />
-         </li>
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={multident.src} alt="" />
-         </li>
-         <li class="p-5 bg-slate-50 rounded-xl">
-            <img class="p-2 max-w-60 lg:max-w-80" src={scotiabank.src} alt="" />
-         </li>
-      </ul>
-   </article>
+         <ul
+            x-ref="logos"
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 animate-marquee">
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-72"
+                     src={onebreak.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-72"
+                     src={interbank.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-72"
+                     src={aranwa.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-72"
+                     src={imperium.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-72"
+                     src={ingenium.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-60"
+                     src={inkari.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-44"
+                     src={lucia.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-72"
+                     src={multident.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+            <li
+               class="relative min-w-[50px] border-gray-100 hover:border-gray-100/75 flex justify-center items-center overflow-hidden rounded-xl border bg-slate-50 w-full py-4 h-auto px-12 transition hover:shadow-lg group">
+               <div
+                  class="flex flex-row items-center justify-center w-full h-auto gap-2 text-white transition group-hover:scale-105">
+                  <img
+                     class="p-2 max-w-60 lg:max-w-72"
+                     src={scotiabank.src}
+                     alt=""
+                  />
+               </div>
+            </li>
+         </ul>
+      </article>
+   </div>
 </section>

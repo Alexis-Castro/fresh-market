@@ -20,11 +20,27 @@ import "@fontsource/metropolis/800.css";
       <link rel="icon" type="image/png" href={favicon.src} />
       <meta name="generator" content={Astro.generator} />
       <title>{title}</title>
+      <script
+         defer
+         is:inline
+         src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"
+      ></script>
    </head>
-   <body class="bg-[#080d19]">
+   <body
+      x-data="{ 'modalIsOpen': false }"
+      @keydown.escape="modalIsOpen = false"
+      class="bg-[#080d19]">
+      <wc-toast></wc-toast>
       <slot />
    </body>
 </html>
+
+<style is:global>
+   html {
+      scroll-behavior: smooth;
+   }
+</style>
+
 <!-- <style is:global>
    html {
       font-family:

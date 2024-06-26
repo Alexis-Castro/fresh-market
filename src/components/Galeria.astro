@@ -27,13 +27,13 @@ import tomaAerea from "../images/toma-aerea.jpg";
             <li class="splide__slide relative py-1">
                <figure class="relative">
                   <img
-                     class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-lg xl:h-full mx-auto"
+                     class="w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"
                      src={fachadaFreshMarket.src}
                      alt="Impulso Capital"
                   />
                </figure>
                <!-- <Image
-                  class:list={"w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-lg xl:h-full mx-auto"}
+                  class:list={"w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"}
                   src={fachadaFreshMarket}
                   alt="Fachada de Fresh Market."
                /> -->
@@ -41,7 +41,7 @@ import tomaAerea from "../images/toma-aerea.jpg";
             <li class="splide__slide relative py-1">
                <figure class="relative">
                   <img
-                     class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-lg xl:h-full mx-auto"
+                     class="w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"
                      src={tomaAerea.src}
                      alt="Impulso Capital"
                   />
@@ -50,7 +50,7 @@ import tomaAerea from "../images/toma-aerea.jpg";
             <li class="splide__slide relative py-1">
                <figure class="relative">
                   <img
-                     class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-lg xl:h-full mx-auto"
+                     class="w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"
                      src={collageNegocios.src}
                      alt="Impulso Capital"
                   />
@@ -63,7 +63,7 @@ import tomaAerea from "../images/toma-aerea.jpg";
    <div class="px-6 lg:px-14">
       <div class="lg:max-w-5xl xl:max-w-7xl relative mx-auto">
          <div class="block basis-0 flex-shrink flex-grow p-2 text-center">
-            <div class="mt-4 max-w-2xl mx-auto">
+            <div class="mt-4 max-w-2xl mx-auto md:text-lg">
                <p class="text-[#c3c3c3] mb-3">
                   ¿Estás cansado de pagar alquileres o rentas cada mes?
                </p>
@@ -73,28 +73,9 @@ import tomaAerea from "../images/toma-aerea.jpg";
                   confiable!
                </p>
                <a
-                  href="javascript:void(0)"
-                  class="py-[.7rem] px-6 bg-gradient-to-br from-freshmarket-primary to-[#3da837c0] hover:scale-105 focus:ring-green-950 focus:ring-offset-indigo-200 transition ease-in text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full inline-flex items-center justify-center text-gray-50 gap-x-2 leading-7 hover:opacity-90">
-                  ¡Quiero separar ahora!
-                  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     width="24"
-                     height="24"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     class="icon icon-tabler icons-tabler-outline icon-tabler-home-dollar"
-                     ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-                     ></path><path d="M19 10l-7 -7l-9 9h2v7a2 2 0 0 0 2 2h6"
-                     ></path><path
-                        d="M9 21v-6a2 2 0 0 1 2 -2h2c.387 0 .748 .11 1.054 .3"
-                     ></path><path
-                        d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"
-                     ></path><path d="M19 21v1m0 -8v1"></path></svg
-                  >
+                  href="https://wa.link/5rvcsb"
+                  class="py-[.7rem] px-6 bg-gradient-to-br from-freshmarket-primary to-[#3da837c0] hover:scale-105 focus:ring-green-950 focus:ring-offset-indigo-200 transition ease-in text-center font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full inline-flex items-center justify-center text-gray-50 gap-x-2 hover:opacity-90">
+                  ¡Quiero más información!
                </a>
             </div>
          </div>
@@ -117,7 +98,8 @@ import tomaAerea from "../images/toma-aerea.jpg";
       let splide = new Splide("#splide-gallery", {
          // type: "loop",
          perPage: 3,
-         padding: "8%",
+         // padding: "2rem",
+         focus: "center",
          gap: 30,
          // gap: 65,
          pagination: false,
@@ -131,8 +113,10 @@ import tomaAerea from "../images/toma-aerea.jpg";
                gap: 25,
             },
             820: {
-               perPage: 1,
-               padding: "15%",
+               perPage: 2,
+               focus: "center",
+
+               // padding: "15%",
             },
             // 1023: {
             //    perPage: 1
