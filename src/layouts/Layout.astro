@@ -1,21 +1,31 @@
 ---
-interface Props {
-   title: string;
-}
-import favicon from "../images/favicon.png";
+// import type { Preload } from "@/types/Preload";
+import favicon from "@/images/favicon.png";
 
 const { title } = Astro.props;
 
 import "@fontsource/metropolis/400.css";
 import "@fontsource/metropolis/600.css";
 import "@fontsource/metropolis/800.css";
+
+interface Props {
+   title: string;
+   // description: string;
+   // preload?: Array<Preload>;
+   // canonical?: string;
+   // image?: string;
+}
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="overflow-x-hidden">
    <head>
       <meta charset="UTF-8" />
-      <meta name="description" content="Astro description" />
+      <meta
+         name="description"
+         content="Gestionamos y capitalizamos un futuro sólido en nuestros inversionistas, clientes y propietarios.
+Tu rentabilidad, tu impulso."
+      />
       <meta name="viewport" content="width=device-width" />
       <link rel="icon" type="image/png" href={favicon.src} />
       <meta name="generator" content={Astro.generator} />

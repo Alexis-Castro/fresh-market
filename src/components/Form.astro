@@ -3,16 +3,16 @@
 ---
 
 <form class="py-6 px-8 sm:px-10 z-20" id="formulario">
-   <div class="">
+   <div class="py-2">
       <div class="flex flex-col justify-center text-sm leading-5">
          <h2
             class="px-2 text-freshmarket-primary text-xl font-semibold text-center mb-1">
-            ¿Quieres olvidarte de pagar alquileres o rentas mensuales?
+            Completa el formulario y te contactaremos
          </h2>
-         <p
+         <!-- <p
             class="px-2 text-freshmarket-primary font-semibold mb-5 text-center">
             Déjanos tus datos y te explicaremos cómo
-         </p>
+         </p> -->
       </div>
    </div>
    <div class="mt-6">
@@ -126,8 +126,8 @@
    </div>
 </form>
 
-<!-- <script>
-   import { toast } from "https://cdn.skypack.dev/wc-toast";
+<script>
+   import { toast } from "wc-toast";
 
    const form = document.querySelector("#formulario") as HTMLFormElement;
    const buttonSubmit = document.querySelector("#button-submit") as HTMLElement;
@@ -148,28 +148,28 @@
 
       try {
          const response = await fetch(
-            "http://localhost/landing/market/contacto/",
+            "https://impulsocapital.com.pe/landing/market/contacto/",
             {
                method: "POST",
                body: datos,
                // mode: "no-cors",
             }
          );
-         const result = await response.json();
-         console.log(result);
+         const result = await response.text();
+         // console.log(result);
 
-         // if (response.data == "El archivo se cargó con éxito") {
-         //    buttonSubmit.removeAttribute("disabled");
-         //    buttonSubmit.classList.remove("opacity-70", "cursor-not-allowed");
-         //    svg.classList.add("hidden");
+         if (result == "El mensaje ha sido enviado") {
+            buttonSubmit.removeAttribute("disabled");
+            buttonSubmit.classList.remove("opacity-70", "cursor-not-allowed");
+            svg.classList.add("hidden");
 
-         //    toast("¡Te has postulado correctamente!", {
-         //       icon: {
-         //          type: "success",
-         //       },
-         //    });
-         //    form.reset();
-         // }
+            toast("¡Te has contactado correctamente!", {
+               icon: {
+                  type: "success",
+               },
+            });
+            form.reset();
+         }
       } catch (error) {
          console.log(error);
          toast(
@@ -192,4 +192,4 @@
    //       return false;
    //    }
    // }
-</script> -->
+</script>
