@@ -1,106 +1,60 @@
 ---
-import planoStandsH from "../images/plano-stands-horizontal.jpg";
-import leyenda from "../images/leyenda.jpg";
-// import Modal from "./Modal.astro";
+import fondo360 from "../images/fondo-360.jpg";
 ---
 
-<section class="py-12 px-6 lg:py-24 lg:px-14 relative" id="ubicacion">
+<section class="py-12 lg:py-24 relative" id="360">
    <div class="lg:max-w-5xl xl:max-w-7xl mx-auto w-full relative">
-      <!-- <div class="block basis-0 flex-shrink flex-grow p-2 text-center">
+      <div class="block basis-0 flex-shrink flex-grow p-2 text-center mb-3">
          <h2
-            class="text-ic-primary text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-8 after:w-10 after:h-1 after:mx-auto after:mt-4 after:bg-freshmarket-primary after:block after:rounded">
-            Dónde nos ubicamos
+            class="text-[#ededed] text-balance text-3xl md:text-4xl lg:text-5xl font-bold after:w-10 after:h-1 after:mx-auto after:mt-3 after:bg-freshmarket-primary after:block after:rounded">
+            Recorrido virtual
          </h2>
-         <p class="text-gray-50 text-lg"></p>
-      </div> -->
-      <div class="block basis-0 flex-shrink flex-grow p-2 text-center">
-         <h2
-            class="text-[#ededed] text-balance text-3xl md:text-4xl lg:text-5xl font-bold mb-6 after:w-10 after:h-1 after:mx-auto after:mt-4 after:bg-freshmarket-primary after:block after:rounded">
-            ¡Separa tu unidad comercial inmobiliaria!
-         </h2>
-         <figure class="relative py-3">
-            <img
-               class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-4xl xl:h-full mx-auto"
-               src={planoStandsH.src}
-               alt="Impulso Capital"
-            />
-         </figure>
       </div>
-      <div class="lg:flex items-center justify-between gap-4 max-w-4xl mx-auto">
+   </div>
+
+   <figure
+      class="flex items-center justify-center overflow-hidden rounded-t-lg relative max-h-[600px]">
+      <img
+         class="object-cover transition duration-300"
+         src={fondo360.src}
+         alt=""
+      />
+      <div
+         class="flex items-stretch flex-col justify-between absolute h-full max-w-none inset-0 bg-ic-primary/85 group-hover:bg-transparent transition duration-300">
          <div
-            class="block basis-0 flex-shrink flex-grow py-5 mx-auto lg:mx-0 text-center lg:text-left mb-5 lg:mb-0">
-            <p class="text-lg text-[#c3c3c3] text-center">
-               <span class="text-freshmarket-primary">Fresh Market</span> cuenta
-               con una amplia variedad de zonas y rubros para tu negocio: Productos
-               de primera necesidad, fast food, gastronomía, área financiera, zonas
-               tecnológicas, de moda, belleza, boutique, bisutería y salud.
-            </p>
-            <div class="mt-5 flex justify-center flex-wrap gap-3">
-               <a
-                  href="https://s3.us-east-2.amazonaws.com/recorridosvirtuales.ic/RECORRIDO360+FRESH+MARKET/index.htm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="py-[.7rem] px-6 bg-gradient-to-br from-freshmarket-primary to-[#3da837c0] hover:scale-105 focus:ring-green-950 focus:ring-offset-indigo-200 transition ease-in text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full inline-flex items-center justify-center text-gray-50 gap-x-2 hover:opacity-90">
-                  Visita el recorrido virtual
-                  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     width="24"
-                     height="24"
-                     viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                     class="icon icon-tabler icons-tabler-outline icon-tabler-view-360-number"
-                     ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-                     ></path><path
-                        d="M14 6a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3"
-                     ></path><path
-                        d="M3 5h2.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-1.5h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-2.5"
-                     ></path><path d="M17 7v4a2 2 0 1 0 4 0v-4a2 2 0 1 0 -4 0z"
-                     ></path><path d="M3 16c0 1.657 4.03 3 9 3s9 -1.343 9 -3"
-                     ></path></svg
-                  >
-               </a>
+            class="grow shrink-0 py-8 px-6 lg:py-20 lg:px-14 flex items-center justify-center w-full">
+            <div class="flex flex-col items-center gap-y-7 z-10">
+               <h4 class="text-lg text-white font-semibold">
+                  Disfruta la experiencia 360°
+               </h4>
                <button
-                  @click="modalIsOpen = true"
-                  class="py-[.7rem] px-6 bg-gradient-to-br from-freshmarket-primary to-[#3da837c0] hover:scale-105 focus:ring-green-950 focus:ring-offset-indigo-200 transition ease-in text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full inline-flex items-center justify-center text-gray-50 gap-x-2 hover:opacity-90">
+                  id="btn-360"
+                  @click="modal360IsOpen = true"
+                  class="animate-sombras bg-white flex w-16 h-16 items-center justify-center rounded-full shadow-2xl shadow-white text-4xl text-ic-secondary">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
-                     width="24"
-                     height="24"
+                     width="33"
+                     height="33"
                      viewBox="0 0 24 24"
-                     fill="none"
-                     stroke="currentColor"
                      stroke-width="2"
+                     stroke="currentColor"
+                     fill="none"
                      stroke-linecap="round"
-                     stroke-linejoin="round"
-                     class="icon icon-tabler icons-tabler-outline icon-tabler-home-dollar"
-                     ><path stroke="none" d="M0 0h24v24H0z" fill="none"
-                     ></path><path d="M19 10l-7 -7l-9 9h2v7a2 2 0 0 0 2 2h6"
-                     ></path><path
-                        d="M9 21v-6a2 2 0 0 1 2 -2h2c.387 0 .748 .11 1.054 .3"
-                     ></path><path
-                        d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"
-                     ></path><path d="M19 21v1m0 -8v1"></path></svg
-                  >
-                  ¡Separa tu unidad ahora!
+                     stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                     <path
+                        d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+                        stroke-width="0"
+                        fill="currentColor"></path>
+                  </svg>
                </button>
             </div>
          </div>
-         <div class="block basis-0 flex-shrink flex-grow p-2 text-center">
-            <p class="uppercase md:text-xl mb-3 font-bold text-[#ededed]">
-               Áreas de distribucion
-            </p>
-            <figure class="relative">
-               <img
-                  class="w-full rounded-md shadow-xl ring-2 ring-ic-secondary ring-opacity-90 max-w-80 xl:h-full mx-auto"
-                  src={leyenda.src}
-                  alt="Leyenda plano"
-               />
-            </figure>
-         </div>
       </div>
-   </div>
+   </figure>
+
+   <!-- <div
+      style="background-image: url('build/img/img-hero.webp');"
+      class="flex items-stretch flex-col justify-between min-h-[500px] relative bg-center bg-no-repeat bg-cover before:inset-0 before:absolute bg-hero before:bg-[rgba(0,0,0,.55)] w-full">
+   </div> -->
 </section>
