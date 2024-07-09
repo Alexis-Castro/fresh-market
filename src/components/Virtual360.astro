@@ -2,59 +2,51 @@
 import fondo360 from "../images/fondo-360.jpg";
 ---
 
-<section class="py-12 lg:py-24 relative" id="360">
-   <div class="lg:max-w-5xl xl:max-w-7xl mx-auto w-full relative">
-      <div class="block basis-0 flex-shrink flex-grow p-2 text-center mb-3">
-         <h2
-            class="text-[#ededed] text-balance text-3xl md:text-4xl lg:text-5xl font-bold after:w-10 after:h-1 after:mx-auto after:mt-3 after:bg-freshmarket-primary after:block after:rounded">
-            Recorrido virtual
-         </h2>
-      </div>
-   </div>
+<section class="py-12 lg:py-44 my-12 relative" id="360">
+   <img
+      class="absolute h-full inset-0 object-cover w-full bg-ic-primary opacity-20"
+      src={fondo360.src}
+      alt=""
+   />
 
-   <figure
-      class="flex items-center justify-center overflow-hidden rounded-t-lg relative max-h-[600px]">
-      <img
-         class="object-cover transition duration-300"
-         src={fondo360.src}
-         alt=""
-      />
+   <div class="lg:max-w-5xl xl:max-w-7xl mx-auto w-full relative">
       <div
-         class="flex items-stretch flex-col justify-between absolute h-full max-w-none inset-0 bg-ic-primary/85 group-hover:bg-transparent transition duration-300">
-         <div
-            class="grow shrink-0 py-8 px-6 lg:py-20 lg:px-14 flex items-center justify-center w-full">
-            <div class="flex flex-col items-center gap-y-7 z-10">
-               <h4 class="text-lg text-white font-semibold">
-                  Disfruta la experiencia 360°
-               </h4>
-               <button
-                  id="btn-360"
-                  @click="modal360IsOpen = true"
-                  class="animate-sombras bg-white flex w-16 h-16 items-center justify-center rounded-full shadow-2xl shadow-white text-4xl text-ic-secondary">
-                  <svg
-                     xmlns="http://www.w3.org/2000/svg"
-                     width="33"
-                     height="33"
-                     viewBox="0 0 24 24"
-                     stroke-width="2"
-                     stroke="currentColor"
-                     fill="none"
-                     stroke-linecap="round"
-                     stroke-linejoin="round">
-                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                     <path
-                        d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
-                        stroke-width="0"
-                        fill="currentColor"></path>
-                  </svg>
-               </button>
+         class="grow shrink-0 py-8 px-6 flex items-center justify-center w-full">
+         <div class="flex flex-col items-center gap-y-6 z-10">
+            <div class="">
+               <h2
+                  class="text-3xl md:text-4xl lg:text-5xl text-center text-white font-semibold mb-3">
+                  Disfruta la experiencia <span class="text-ic-secondary"
+                     >360°</span
+                  >
+               </h2>
+               <p class="text-lg text-[#c3c3c3] text-center">
+                  Conoce Fresh Market desde donde estés, gracias a nuestro
+                  Recorrido Virtual
+               </p>
             </div>
+            <button
+               id="btn-360"
+               @click="modal360IsOpen = true"
+               class="animate-sombras bg-white flex w-16 h-16 items-center justify-center rounded-full shadow-2xl shadow-white text-4xl text-ic-primary">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="33"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                     d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+                     stroke-width="0"
+                     fill="currentColor"></path>
+               </svg>
+            </button>
          </div>
       </div>
-   </figure>
-
-   <!-- <div
-      style="background-image: url('build/img/img-hero.webp');"
-      class="flex items-stretch flex-col justify-between min-h-[500px] relative bg-center bg-no-repeat bg-cover before:inset-0 before:absolute bg-hero before:bg-[rgba(0,0,0,.55)] w-full">
-   </div> -->
+   </div>
 </section>
