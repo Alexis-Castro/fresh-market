@@ -24,7 +24,7 @@
             id="close-360">
             <svg
                xmlns="http://www.w3.org/2000/svg"
-               class="w-5 h-5 mx-auto"
+               class="w-8 h-w-8 mx-auto"
                viewBox="0 0 20 20"
                fill="currentColor">
                <path
@@ -65,27 +65,22 @@
       iframe.setAttribute("allowfullscreen", "");
       // document.querySelector(".embed-360").classList.add("active");
       embed360.appendChild(iframe);
-
-      // document.querySelector("#instruccionesmodal").modal("show");
-
-      // if (localStorage.getItem("seen") != new Date().getDate()) {
-      //    localStorage.removeItem("nombresunidad");
-      //    localStorage.removeItem("codigosunidad");
-      // }
-
-      // var refresh =
-      //    window.location.protocol +
-      //    "//" +
-      //    window.location.host +
-      //    window.location.pathname +
-      //    "?vista360=si";
-      // window.history.pushState({ path: refresh }, "", refresh);
    });
 
    // document.querySelector(".back360")!.addEventListener("click", function () {
    //    // embed360.classList.remove("flex");
    //    document.querySelector("#embed-360 iframe")!.remove();
    // });
+   // document.body.addEventListener("keydown", function (e) {
+   //    if (e.key == "Escape" && ) {
+   //       document.querySelector("#embed-360 iframe")!.remove();
+   //    }
+   // });
+   document.body.addEventListener("keydown", function (e) {
+      if (e.key == "Escape" && document.querySelector("#embed-360 iframe")) {
+         document.querySelector("#embed-360 iframe")!.remove();
+      }
+   });
    document.querySelector("#close-360")!.addEventListener("click", function () {
       // embed360.classList.remove("flex");
       document.querySelector("#embed-360 iframe")!.remove();

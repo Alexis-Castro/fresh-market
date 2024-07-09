@@ -23,8 +23,7 @@ interface Props {
       <meta charset="UTF-8" />
       <meta
          name="description"
-         content="Gestionamos y capitalizamos un futuro sólido en nuestros inversionistas, clientes y propietarios.
-Tu rentabilidad, tu impulso."
+         content="Gestionamos y capitalizamos un futuro sólido en nuestros inversionistas, clientes y propietarios. Tu rentabilidad, tu impulso."
       />
       <meta name="viewport" content="width=device-width" />
       <link rel="icon" type="image/png" href={favicon.src} />
@@ -38,7 +37,7 @@ Tu rentabilidad, tu impulso."
    </head>
    <body
       x-data="{ modalIsOpen: false, modal360IsOpen: false }"
-      @keydown.escape="modalIsOpen = false"
+      @keydown.escape="modal360IsOpen = false"
       class="bg-[#080d19]">
       <wc-toast></wc-toast>
       <slot />
