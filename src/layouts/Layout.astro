@@ -37,7 +37,7 @@ Tu rentabilidad, tu impulso."
       ></script>
    </head>
    <body
-      x-data="{ 'modalIsOpen': false }"
+      x-data="{ modalIsOpen: false, modal360IsOpen: false }"
       @keydown.escape="modalIsOpen = false"
       class="bg-[#080d19]">
       <wc-toast></wc-toast>
@@ -49,6 +49,9 @@ Tu rentabilidad, tu impulso."
    html {
       scroll-behavior: smooth;
    }
+   /* [x-cloak] {
+      display: none !important;
+   } */
 </style>
 
 <!-- <style is:global>

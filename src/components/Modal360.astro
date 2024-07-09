@@ -1,0 +1,93 @@
+<div
+   x-cloak
+   x-show="modal360IsOpen"
+   x-transition.opacity.duration.500ms
+   x-trap.inert.noscroll="modal360IsOpen"
+   class="fixed inset-0 z-30 flex justify-center bg-black/20 p-4 pb-6 backdrop-blur-md items-center lg:p-3 back360"
+   role="dialog"
+   aria-modal="true"
+   aria-labelledby="ReservaStand">
+   <!-- Modal Dialog -->
+   <div
+      x-show="modal360IsOpen"
+      x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity"
+      x-transition:enter-start="opacity-0 scale-50"
+      x-transition:enter-end="opacity-100 scale-100"
+      class="flex flex-col overflow-hidden overflow-y-visible relative w-full h-full rounded-xl border border-slate-700 bg-[#080d19] text-[#c3c3c3]"
+      id="embed-360">
+      <!-- <div class="absolute w-full h-full left-0 top-0 z-[9999]"> -->
+      <div class="flex items-center justify-end">
+         <button
+            @click="modal360IsOpen = false"
+            aria-label="close modal"
+            class="p-2 text-gray-400 rounded-md"
+            id="close-360">
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="w-5 h-5 mx-auto"
+               viewBox="0 0 20 20"
+               fill="currentColor">
+               <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+            </svg>
+         </button>
+      </div>
+      <!-- <iframe
+         src="https://ayllukaypi.pe/files/360/villa-los-parques"
+         width="100%"
+         height="100%"
+         referrerpolicy="no-referrer-when-downgrade"
+         allowfullscreen=""></iframe> -->
+      <!-- </div> -->
+   </div>
+</div>
+<style>
+   [x-cloak] {
+      display: none !important;
+   }
+</style>
+
+<script>
+   const embed360 = document.querySelector("#embed-360") as HTMLElement;
+   document.querySelector("#btn-360")!.addEventListener("click", function () {
+      // const path = window.location.origin;
+      const path = "https://impulsocapital.com.pe";
+      console.log(path);
+
+      const iframe = document.createElement("iframe");
+      iframe.src = `${path}/recorridos/freshmarket`;
+      iframe.setAttribute("width", "100%");
+      iframe.setAttribute("height", "100%");
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+      iframe.setAttribute("allowfullscreen", "");
+      // document.querySelector(".embed-360").classList.add("active");
+      embed360.appendChild(iframe);
+
+      // document.querySelector("#instruccionesmodal").modal("show");
+
+      // if (localStorage.getItem("seen") != new Date().getDate()) {
+      //    localStorage.removeItem("nombresunidad");
+      //    localStorage.removeItem("codigosunidad");
+      // }
+
+      // var refresh =
+      //    window.location.protocol +
+      //    "//" +
+      //    window.location.host +
+      //    window.location.pathname +
+      //    "?vista360=si";
+      // window.history.pushState({ path: refresh }, "", refresh);
+   });
+
+   // document.querySelector(".back360")!.addEventListener("click", function () {
+   //    // embed360.classList.remove("flex");
+   //    document.querySelector("#embed-360 iframe")!.remove();
+   // });
+   document.querySelector("#close-360")!.addEventListener("click", function () {
+      // embed360.classList.remove("flex");
+      document.querySelector("#embed-360 iframe")!.remove();
+   });
+</script>
