@@ -147,14 +147,12 @@
       // }
 
       try {
-         const response = await fetch(
-            "https://impulsocapital.com.pe/landing/market/contacto/",
-            {
-               method: "POST",
-               body: datos,
-               // mode: "no-cors",
-            }
-         );
+         const url = "http://localhost/landing/market/contacto/";
+         const response = await fetch(url, {
+            method: "POST",
+            body: datos,
+            // mode: "no-cors",
+         });
          const result = await response.text();
          // console.log(result);
 
