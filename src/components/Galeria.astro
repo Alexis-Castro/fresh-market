@@ -88,8 +88,10 @@ import tomaAerea from "../images/toma-aerea.jpg";
 
    document.addEventListener("DOMContentLoaded", function () {
       let splide = new Splide("#splide-gallery", {
-         // type: "loop",
+         type: "slide",
          perPage: 3,
+         rewind: true,
+         rewindSpeed: 800,
          // padding: "2rem",
          focus: "center",
          gap: 30,
