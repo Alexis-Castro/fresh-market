@@ -6,7 +6,7 @@ import fondo360 from "../images/fondo-360.jpg";
    <img
       class="absolute h-full inset-0 object-cover w-full bg-ic-primary opacity-20"
       src={fondo360.src}
-      alt=""
+      alt="Imagen de fondo de recorrido Virtual 360"
    />
 
    <div class="lg:max-w-5xl xl:max-w-7xl mx-auto w-full relative">
@@ -27,6 +27,8 @@ import fondo360 from "../images/fondo-360.jpg";
             </div>
             <button
                id="btn-360"
+               aria-label="Abrir recorrido 360"
+               title="Abrir recorrido 360"
                @click="modal360IsOpen = true"
                class="animate-sombras bg-white flex w-16 h-16 items-center justify-center rounded-full shadow-2xl shadow-white text-4xl text-ic-primary">
                <svg
