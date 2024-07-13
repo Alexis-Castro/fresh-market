@@ -1,5 +1,5 @@
 ---
-// import { Image } from "astro:assets";
+import { Image } from "astro:assets";
 import fachadaFreshMarket from "../images/fachada-fresh.jpg";
 import collageNegocios from "../images/collage-negocios.jpg";
 import tomaAerea from "../images/toma-aerea.jpg";
@@ -26,33 +26,28 @@ import tomaAerea from "../images/toma-aerea.jpg";
          <ul class="splide__list text-center">
             <li class="splide__slide relative py-1">
                <figure class="relative">
-                  <img
-                     class="w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"
-                     src={fachadaFreshMarket.src}
-                     alt="Impulso Capital"
-                  />
-               </figure>
-               <!-- <Image
-                  class:list={"w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"}
-                  src={fachadaFreshMarket}
-                  alt="Fachada de Fresh Market."
-               /> -->
-            </li>
-            <li class="splide__slide relative py-1">
-               <figure class="relative">
-                  <img
-                     class="w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"
-                     src={tomaAerea.src}
-                     alt="Impulso Capital"
+                  <Image
+                     class={"w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"}
+                     src={fachadaFreshMarket}
+                     alt="Fachada de Fresh Market."
                   />
                </figure>
             </li>
             <li class="splide__slide relative py-1">
                <figure class="relative">
-                  <img
-                     class="w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"
-                     src={collageNegocios.src}
-                     alt="Impulso Capital"
+                  <Image
+                     class={"w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"}
+                     src={tomaAerea}
+                     alt="Toma aérea de Fresh Market."
+                  />
+               </figure>
+            </li>
+            <li class="splide__slide relative py-1">
+               <figure class="relative">
+                  <Image
+                     class={"w-full rounded-md shadow-xl ring-4 ring-ic-primary ring-opacity-90 xl:h-full mx-auto"}
+                     src={collageNegocios}
+                     alt="Collage de negocios."
                   />
                </figure>
             </li>
@@ -116,7 +111,9 @@ import tomaAerea from "../images/toma-aerea.jpg";
             //    perPage: 1
             // }
          },
-      }).mount();
+      });
+
+      splide.mount();
    });
 </script>
 

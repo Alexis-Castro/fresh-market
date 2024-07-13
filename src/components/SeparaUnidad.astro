@@ -1,6 +1,7 @@
 ---
 import planoStandsH from "../images/plano-stands-horizontal.jpg";
 import leyenda from "../images/leyenda.jpg";
+import { Image } from "astro:assets";
 // import Modal from "./Modal.astro";
 ---
 
@@ -12,10 +13,15 @@ import leyenda from "../images/leyenda.jpg";
             ¡Separa tu unidad comercial inmobiliaria!
          </h2>
          <figure class="relative py-3">
-            <img
+            <!-- <img
                class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-4xl xl:h-full mx-auto"
                src={planoStandsH.src}
-               alt="Impulso Capital"
+               alt="Plano de distribucion de unidades comerciales"
+            /> -->
+            <Image
+               class={"w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-4xl xl:h-full mx-auto"}
+               src={planoStandsH}
+               alt="Plano de distribucion de unidades comerciales"
             />
          </figure>
       </div>

@@ -1,5 +1,6 @@
 ---
 // const path = Astro.url.pathname;
+import { Image } from "astro:assets";
 import freshmarket from "../images/fresh-market.png";
 import impulsoCapital from "../images/impulso-capital-h.png";
 ---
@@ -13,44 +14,37 @@ import impulsoCapital from "../images/impulso-capital-h.png";
          <div class="flex items-stretch shrink-0 min-h-[4rem]">
             <a
                class="flex items-center relative grow-0 shrink-0 py-2 px-3"
-               href="#">
-               <img
+               href="/freshmarket">
+               <!-- <img
                   class="w-full max-w-36 md:max-w-52"
                   width="150"
                   height="47"
                   src={impulsoCapital.src}
-                  alt="Impulso Capital"
+                  alt="Logo de Impulso Capital"
+               /> -->
+               <Image
+                  src={impulsoCapital}
+                  class={"w-full max-w-36 md:max-w-52"}
+                  alt="Logo de Impulso Capital."
                />
-               <!-- <picture>
-                  <source
-                     srcset=""
-                     type="image/avif"
-                  />
-                  <source
-                     srcset=""
-                     type="image/webp"
-                  />
-                  <img
-                     class="max-h-12"
-                     width="105"
-                     height="47"
-                     src=""
-                     alt=""
-                  />
-               </picture> -->
             </a>
          </div>
 
          <div class="flex items-stretch shrink-0 min-h-[4rem] gap-x-2">
             <a
                class="flex items-center relative grow-0 shrink-0 py-2 px-3"
-               href="#">
-               <img
+               href="/freshmarket">
+               <!-- <img
                   class="w-full max-w-24 md:max-w-28"
                   width="100"
                   height="47"
                   src={freshmarket.src}
-                  alt="Fresh Market"
+                  alt="Logo de Fresh Market"
+               /> -->
+               <Image
+                  src={freshmarket}
+                  class={"w-full max-w-24 md:max-w-28"}
+                  alt="Logo de Fresh Market."
                />
             </a>
             <a
