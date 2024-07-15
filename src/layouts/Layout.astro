@@ -2,7 +2,7 @@
 // import type { Preload } from "@/types/Preload";
 import favicon from "@/images/favicon.png";
 
-const { title } = Astro.props;
+const { title, bgBody } = Astro.props;
 
 import "@fontsource/metropolis/400.css";
 import "@fontsource/metropolis/600.css";
@@ -39,7 +39,7 @@ interface Props {
    <body
       x-data="{ modalIsOpen: false, modal360IsOpen: false }"
       @keydown.escape="modal360IsOpen = false"
-      class="bg-[#080d19]">
+      class={bgBody}>
       <wc-toast></wc-toast>
       <slot />
    </body>
