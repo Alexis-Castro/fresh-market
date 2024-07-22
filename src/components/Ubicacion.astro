@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import ubicacionMapa from "../images/ubicacion-mapa.jpg";
 ---
 
@@ -8,9 +9,9 @@ import ubicacionMapa from "../images/ubicacion-mapa.jpg";
          <div
             class="block basis-0 flex-shrink flex-grow p-2 md:flex-none mx-auto lg:mx-0 text-center lg:text-left mb-5 lg:mb-0">
             <figure class="relative">
-               <img
+               <Image
                   class="w-full rounded-md shadow-xl ring-4 ring-ic-secondary ring-opacity-90 max-w-lg xl:h-full mx-auto"
-                  src={ubicacionMapa.src}
+                  src={ubicacionMapa}
                   alt="Impulso Capital"
                />
             </figure>

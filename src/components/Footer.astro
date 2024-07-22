@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import impulsoCapitalWhite from "../images/impulso-capital-white.png";
 ---
 
@@ -8,9 +9,9 @@ import impulsoCapitalWhite from "../images/impulso-capital-white.png";
          class="md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 justify-center flex-wrap">
          <div class="p-2 justify-items-center">
             <a href="/freshmarket" class="navbar-item pl-0 inline-flex">
-               <img
+               <Image
                   class="w-full max-w-56"
-                  src={impulsoCapitalWhite.src}
+                  src={impulsoCapitalWhite}
                   alt="Impulso Capital"
                   width="150"
                   height="43"

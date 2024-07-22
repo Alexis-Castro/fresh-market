@@ -1,11 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import fondo360 from "../images/fondo-360.jpg";
 ---
 
 <section class="py-12 lg:py-44 my-12 relative" id="360">
-   <img
+   <Image
       class="absolute h-full inset-0 object-cover w-full bg-ic-primary opacity-20"
-      src={fondo360.src}
+      src={fondo360}
       alt="Imagen de fondo de recorrido Virtual 360"
    />
 
@@ -21,7 +22,7 @@ import fondo360 from "../images/fondo-360.jpg";
                   >
                </h2>
                <p class="text-lg text-[#c3c3c3] text-center">
-                  Conoce Fresh Market desde donde estés, gracias a nuestro
+                  Conoce Fresh Market desde dónde estés, gracias a nuestro
                   Recorrido Virtual
                </p>
             </div>

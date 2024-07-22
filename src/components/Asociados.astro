@@ -9,6 +9,7 @@ import aspai from "../images/aspai-blanco.png";
 import inversionHogar from "../images/inversion-hogar.png";
 import inversionNegocio from "../images/inversion-negocio.png";
 import sociosClub from "../images/socios-club.png";
+import { Image } from "astro:assets";
 ---
 
 <section class="py-12 lg:py-24 relative">
@@ -16,9 +17,9 @@ import sociosClub from "../images/socios-club.png";
       <div class="lg:max-w-5xl xl:max-w-7xl relative mx-auto">
          <div class="max-w-3xl md:mx-auto md:text-center mb-10">
             <figure class="relative mb-5">
-               <img
+               <Image
                   class="w-1/2 rounded-md mx-auto"
-                  src={impulsoCapitalWhite.src}
+                  src={impulsoCapitalWhite}
                   alt="Logo de Impulso Capital Grupo Inmobiliario"
                />
             </figure>
@@ -35,8 +36,8 @@ import sociosClub from "../images/socios-club.png";
                   Acreditados por:
                </h3>
                <figure class="relative">
-                  <img
-                     src={ministerio.src}
+                  <Image
+                     src={ministerio}
                      class="w-72 mx-auto"
                      alt="Logo del Ministerio de Vivienda, Construcción y Saneamiento"
                   />
@@ -50,8 +51,8 @@ import sociosClub from "../images/socios-club.png";
                   class="grid grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
                   <div class="p-2">
                      <figure class="relative">
-                        <img
-                           src={camaraComercio.src}
+                        <Image
+                           src={camaraComercio}
                            class="w-72 mx-auto"
                            alt="Logo de la Camara de Comercio e Industria de Arequipa"
                         />
@@ -59,8 +60,8 @@ import sociosClub from "../images/socios-club.png";
                   </div>
                   <div class="p-2">
                      <figure class="relative">
-                        <img
-                           src={camaraComercioArequipa.src}
+                        <Image
+                           src={camaraComercioArequipa}
                            class="w-72 mx-auto"
                            alt="Logo de la Camara de Comercio de Lima"
                         />
@@ -68,8 +69,8 @@ import sociosClub from "../images/socios-club.png";
                   </div>
                   <div class="p-2">
                      <figure class="relative">
-                        <img
-                           src={aspai.src}
+                        <Image
+                           src={aspai}
                            class="w-72 mx-auto"
                            alt="Logo de ASPAI"
                         />
@@ -78,8 +79,8 @@ import sociosClub from "../images/socios-club.png";
 
                   <div class="p-2">
                      <figure class="relative">
-                        <img
-                           src={inversionHogar.src}
+                        <Image
+                           src={inversionHogar}
                            class="w-[10rem] mx-auto"
                            alt="Logo de Inversion Hogar IC"
                         />
@@ -87,8 +88,8 @@ import sociosClub from "../images/socios-club.png";
                   </div>
                   <div class="p-2">
                      <figure class="relative">
-                        <img
-                           src={inversionNegocio.src}
+                        <Image
+                           src={inversionNegocio}
                            class="w-72 mx-auto"
                            alt="Logo de Inversion Negocio IC"
                         />
@@ -96,8 +97,8 @@ import sociosClub from "../images/socios-club.png";
                   </div>
                   <div class="p-2">
                      <figure class="relative">
-                        <img
-                           src={sociosClub.src}
+                        <Image
+                           src={sociosClub}
                            class="w-72 mx-auto"
                            alt="Logo de Socios Club IC"
                         />
