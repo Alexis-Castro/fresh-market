@@ -1,0 +1,113 @@
+<!-- ---
+
+---
+
+<section class="px-6 py-12">
+   <div id="container"></div>
+</section>
+
+<style>
+   .economy {
+      color: white;
+      background-color: #43aa8b;
+   }
+</style>
+
+<script>
+   // import SeatChart from "seatchart";
+   const element = document.getElementById("container");
+
+   const stands = [
+      { row: 3, column: 0, stand_id: 1, stand_info: "03" },
+      { row: 4, column: 3, stand_id: 2, stand_info: "52" },
+      // Agrega más datos según sea necesario
+   ];
+
+   let options = {
+      cart: {
+         currency: "S/",
+      },
+      // legendVisible: false,
+      map: {
+         frontVisible: false,
+         indexerColumns: {
+            // visible: false,
+            label: function (column) {
+               return 16 - column; // Ajusta según la numeración
+            },
+         },
+         indexerRows: {
+            // visible: false,
+            label: function (row) {
+               // return row +1   // Ajusta según la numeración
+            },
+         },
+         seatLabel: function (index) {
+            const { row, col } = index;
+            // const { disabledSeats } = options.map;
+
+            // Buscar información del stand correspondiente
+            const stand = stands.find((s) => s.row === row && s.column === col);
+            if (stand) {
+               return stand.stand_info; // Retorna la información del stand
+            }
+
+            // Contar asientos deshabilitados antes del asiento actual
+            // const disabledBefore = disabledSeats.filter(seat =>
+            //   seat.col < col || (seat.col === col && seat.row < row)
+            // ).length;
+
+            // let seatNumber;
+            // if (col % 2 === 0) { // Columnas pares (0, 2, 4, ...)
+            //   seatNumber = col * options.map.rows + row + 1 - disabledBefore;
+            // } else { // Columnas impares (1, 3, 5, ...)
+            //   seatNumber = (col + 1) * options.map.rows - row - disabledBefore;
+            // }
+            // return seatNumber.toString();
+         },
+         rows: 4,
+         columns: 16,
+         // columnSpacers: [1, 3],
+         rowSpacers: [1, 3],
+         seatTypes: {
+            default: {
+               label: "Stands",
+               cssClass: "stands",
+               price: 10,
+            },
+         },
+         disabledSeats: [
+            { row: 0, col: 15 },
+            { row: 0, col: 0 },
+            { row: 1, col: 0 },
+            { row: 2, col: 0 },
+            { row: 1, col: 1 },
+            { row: 2, col: 1 },
+            { row: 1, col: 8 },
+            { row: 2, col: 8 },
+            { row: 1, col: 15 },
+            { row: 2, col: 15 },
+            { row: 1, col: 14 },
+            { row: 2, col: 14 },
+            { row: 3, col: 0 },
+            // { row: 15, col: 2 },
+         ],
+         reservedSeats: [
+            // { row: 0, col: 0 },
+            // { row: 1, col: 0 },
+            // { row: 1, col: 1 },
+            { row: 0, col: 3 },
+            { row: 1, col: 3 },
+            { row: 2, col: 1 },
+            { row: 15, col: 2 },
+         ],
+      },
+   };
+
+   const sc = new Seatchart(element, options);
+
+   sc.addEventListener("submit", function handleSubmit(e) {
+      // console.log('gaaa')
+      alert("Total: S/." + e.total);
+   });
+</script> -->
